@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 const PORT = 3000;
@@ -189,6 +191,14 @@ app.post('/api/user/verify-email', (req, res) => {
     } else {
         return res.status(400).json({ message: "Girdiğin kod hatalı veya süresi dolmuş!" });
     }
+});
+
+// --- RESİM YÜKLEME ---
+app.post('/api/upload', upload.single('file'), (req, res) => {
+    if (!req.file) return res.status(400).json({ message: "Dosya yüklenemedi!" });
+    // Yüklenen dosyanın URL'sini oluştur (Sunucu adresinize göre)
+    const fileUrl = `http://127.0.0.1:3000/uploads/${req.file.filename}`;
+    res.status(200).json({ url: fileUrl });
 });
 
 // --- GİRİŞ YAP (LOGIN) ---

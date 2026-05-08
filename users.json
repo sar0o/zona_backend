@@ -440,9 +440,10 @@
     "isSocial": false,
     "isEmailVerified": false,
     "bio": "Selam!",
-    "profilePic": "http://127.0.0.1:3000/uploads/default_pp.png",
+    "profilePic": "http://127.0.0.1:3000/uploads/7220b37a5c0319c6d8d91e57810d7251?v=1778275456881",
     "banner": "http://127.0.0.1:3000/uploads/default_banner.png",
-    "createdAt": "2026-05-03T20:14:45.535Z"
+    "createdAt": "2026-05-03T20:14:45.535Z",
+    "location": "CA"
   },
   {
     "id": "user_v5815S15wC",
@@ -517,9 +518,24 @@
     "authType": "local",
     "isSocial": false,
     "isEmailVerified": false,
+    "bio": "",
+    "profilePic": null,
+    "banner": "http://127.0.0.1:3000/uploads/19ec68470e3bf1b22da84af8e1ba5f1d?v=1778266868127",
+    "createdAt": "2026-05-06T20:21:37.042Z",
+    "location": ""
+  },
+  {
+    "id": "user_I55nt0yhDi",
+    "username": "Bensarp",
+    "email": "",
+    "password": "Altan123",
+    "authType": "local",
+    "isSocial": false,
+    "isEmailVerified": false,
     "bio": "Selam!",
-    "profilePic": "http://127.0.0.1:3000/uploads/default_pp.png",
+    "location": "",
+    "profilePic": null,
     "banner": "http://127.0.0.1:3000/uploads/default_banner.png",
-    "createdAt": "2026-05-06T20:21:37.042Z"
+    "createdAt": "2026-05-08T19:03:01.791Z"
   }
 ]
