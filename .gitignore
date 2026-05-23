@@ -1,0 +1,9 @@
+node_modules/
+uploads/*
+!uploads/.gitkeep
+.env
+*.log
+users.json
+activities.json
+pings.json
+collectives.json
